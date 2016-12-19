@@ -1,6 +1,8 @@
 
 
+
 module.exports.index = function (req, res) {
-  res.render('home/index', { title: 'Express'})
+  res.render('links/index', { title: 'Links'})
 };
+
 

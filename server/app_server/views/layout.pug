@@ -1,16 +1,26 @@
 doctype html
 html
   head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
     link(rel='stylesheet', href='/bootstrap-3.3.7-dist/css/bootstrap.css')
     link(rel='stylesheet', href='/bootstrap-3.3.7-dist/css/bootstrap-theme.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
   body
     header
-      nav.navbar.navbar-inverse.navbar-fixed-top
+      nav.navbar.navbar-inverse
         .container-fluid
           .navbar-header
             a.navbar-brand(href='/') LinkSaver
-    block content
+          ul.nav.navbar-nav
+            li
+              a(href='/') Home
+            li
+              a(href='/links') Links
+
+    .container-fluid
+      .row
+        .col-xs-12
+          block content
     script(src='/javascripts/jquery-1.12.4.min.js')
     script(src='/bootstrap-3.3.7-dist/js/bootstrap.js')
