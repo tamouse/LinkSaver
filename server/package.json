@@ -1,18 +1,27 @@
 {
-  "name": "server",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
+  "name": "linksaver-server",
+  "version": "0.1.0",
+  "description": "LinkSaver API Server",
+  "main": "index.js",
+  "author": "Tamara Temple <tamouse@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "url": "git@github.com:tamouse/LinkSaver.git",
+    "type": "git"
   },
   "dependencies": {
-    "body-parser": "~1.15.2",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.2.0",
-    "express": "~4.14.0",
-    "morgan": "~1.7.0",
-    "node-sass-middleware": "0.9.8",
-    "pug": "~2.0.0-beta6",
-    "serve-favicon": "~2.3.0"
+    "bcrypt": "^1.0.1",
+    "body-parser": "^1.15.2",
+    "colors": "^1.1.2",
+    "express": "^4.14.0",
+    "express-jwt": "^5.1.0",
+    "jsonwebtoken": "^7.2.1",
+    "lodash": "^4.17.3",
+    "mongoose": "^4.7.5",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "supertest": "^2.0.1"
   }
 }
